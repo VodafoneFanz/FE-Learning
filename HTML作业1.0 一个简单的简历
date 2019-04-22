@@ -1,0 +1,38 @@
+<html>
+<body>
+
+<!--今天要用知识做一张简历-->
+  <h1 style="color:#222222;text-align:center;">简历</h1>
+
+<!--姓名部分-->
+  <div style="color:#BB34B0">
+    <big><strong>姓名:</strong></big><br/>
+    <big><i>Mr.</i></big>
+    <b><big>L</big>i<big>&nbspM</big>ing</b>
+  </div>
+  <hr/>
+
+<!--学历部分-->
+  <div style="color:#ffffff;background-color:#ff5400;">
+    <b>高中</b> School No. 1 <i>2011-2014</i><br/><br/>
+    <b>大学</b> School No. 2 <i>2014-2015</i>
+  </div>
+  <hr/>
+  
+<!--经历部分-->
+  <div style="background-color:#ffbc00;">
+    <h2 style="font-size:20px;color:#222222">工作经历</h2>
+    <b>新东方厨师</b>  <i>2016-2017</i><br/>
+    <b>舟山渔民</b> <i>2017-</i>
+  </div>
+  <hr/>
+  
+<!--联系方式-->
+  <address>
+    <a href="http://www.bilibili.com"target="_blank">Li Ming</a><br/>
+    Tel:1000000<br/>
+    E-mail:11111
+  </address>
+  
+</body>
+</html>
