@@ -1,0 +1,38 @@
+<html>
+<body style="background-color:#FFBC00">
+    
+  <h1 style="background-color:blue;text-align:center;" >简历</h1>
+  
+  <b>姓名</b>
+  <p style="font-family:verdana;color:blue;font-size=5px;">DJ. Han Meimei</p>
+  <hr/>
+  
+  <h2>Hi Bro</h2>
+  <p>Drink this
+    <br/>
+    <i>Drink this</i>
+    <br/>
+    <big>Drink this</big>
+    <br/>
+    <em>Drink this</em>
+    <br/>
+    <strong>Drink this</strong>
+    H<sub>2</sub>O
+    X<sup>2</sup>
+  </p>
+  
+  <pre>
+    for i = 1:2
+    X     =     3.3333;
+  </pre>
+  
+  <!--This is a link-->
+  <a href="http://www.w3school.com.cn">Link
+  </a>
+  <br/>
+
+  <img src="w3school.jpg" width="104" height="142"/>
+
+</body>
+</html>
+      
