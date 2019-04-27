@@ -1,0 +1,41 @@
+<html>
+<body>
+    
+<table cellpadding="10" cellspacing="5" bgcolor="aliceblue" border="1">
+<caption>Table</caption>
+  <tr>
+    <th colspan="2">Name</th>
+  </tr>
+  
+  <tr>
+    <td>
+      <ul type="circle">
+      <li>milk</li>
+      <li>coffee</li>
+      </ul>  
+    </td>
+    <td>
+      <ol type="I">
+        <li>eat</li>
+        <li>drink</li>
+      </ol>
+    </td>
+  </tr>
+  
+  <tr>
+    <td bgcolor="red">&nbsp;</td>
+    
+    <td>
+      <dl>
+        <dt>四季春</dt>
+        <dd>去冰3分</dd>
+        <dt>焦糖</dt>
+        <dd>全糖</dd>
+      </dl>
+    </td>
+  </tr>
+
+</table>
+  
+</body>
+</html>
