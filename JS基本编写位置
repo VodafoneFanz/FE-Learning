@@ -1,0 +1,46 @@
+    <!--
+        将js编写到button的onclick属性,点击按钮即刻生效
+    -->
+    <button onclick="alert('shit!');">click on me!</button>
+
+    <!--
+        将js代码写进超链接href，注意格式
+        这样写非常不方便！！难以维护不推荐。
+    -->
+    <a href="javascript:alert('damn!);">click on me~</a>
+    
+        <link href="Style.css" rel="stylesheet" type="text/css" />
+    <!-- <script type="text/javascript">
+    
+        /*
+        控制网页弹出一个警告框
+        alert("hello world");
+        */
+
+        /*
+        在计算技术出一个内容
+        document.write("hello world!");
+        向<body>输出内容
+        */
+        
+        /*
+        向控制台输出一个内容
+        console.log("hello world!");
+        输出在控制台可见
+        */
+
+    </script> -->
+
+    <!-- 
+        可以将js代码写入scrpit标签
+        <script>
+        alert("What r u doing!?");
+    </script>
+    -->
+
+    <!--
+        js代码也通过script引入，引入为.js文件
+        但是一旦有外部文件就不能在里面写代码了
+        必须重新创建一个script
+    -->
+    <script type="text/javascript" src="JS.js"></script>
