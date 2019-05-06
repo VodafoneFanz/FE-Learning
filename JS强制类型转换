@@ -1,0 +1,60 @@
+    /*
+        强制类型转换
+        将其他值转换成String Numeber Boolean
+    */
+
+    /*
+        转换成String
+        1.调用被转换数据类型的toString()的方法
+            就是XXX.toString()
+            该方法不会影响原变量，会将转换的结果返回
+            Null和Undefined没有toString()方法
+        2.调用String()函数并将被转换的数据作为参数
+            用这种方法对于Null和Undefined也可以使用
+
+    */
+
+    /*
+        转换为Number
+        1.使用函数Number();
+            字符串-->数值
+            -纯数字就会转换成数值
+            -字符串中若有非数字就会转换成NaN
+            -空串或者全部是空格转换成0
+            
+            Boolean会转换成1 0
+            -true--> 1
+            -false--> 0
+
+            Null--> 0
+            Undefined--> NaN
+
+        2.该种方法专门用来对付字符串
+            parseInt()把一个字符串转换为整数
+            parseFloat()把一个字符串转换为浮点数
+            eg a = "123px"
+            parseInt(a)可以将其中有效的整数内容转出，然后转换为Number
+            对于不是String的数据应该先转换为String再用该函数
+    */
+
+    /*
+        表示16进制 0x开头
+        表示8进制 0开头
+        表示2进制 0b开头 但不是所有浏览器都支持
+
+        "070"有些浏览器会当成八进制，有些会当成十进制
+        此时传递第二个参数来规定进制
+        parseInt(a,10);
+    */
+
+    /*
+        转换为Boolean
+        用Boolean()函数
+            数字 除了0和NaN 其余都是true
+            字符串 除了空串 其余都是true
+            null undefined--> false
+    */
+    var a = "123";
+
+    console.log(a);
+    console.log(typeof b);
