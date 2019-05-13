@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Style.css" />
+    </head>
+    
+    <body>
+        <p>锄禾日当午，汗滴禾下土</p>
+
+        <!--
+            块元素
+            div是一个块元素，独占一行
+                还有p h1 h2 h3... br
+                div 没有特别的意义，就是一个纯粹的块元素
+                    并且不会为里面元素设置默认样式
+                div 通常用于布局
+
+            内联元素
+            span是一个内联元素（行内元素）
+                所谓内联元素，表示只会占用自身大小的元素，不会占用一整行
+                a img iframe span
+            span没有任何语义，span标签住那们用来选中文字，然后对其设置样式
+
+            块元素主要用于页面的布局，内联元素主要用来选中文本并设置样式
+                一般情况下用块元素去包含内联元素
+                a元素可以包含任意元素，除了它本身
+                p元素不能包含其他任何块元素
+
+        -->
+
+        <div style="background-color:red; width:20%;">
+            I'm a div!
+        </div>
+
+        <hr />
+
+        <span>我是一个span</span>
+        <span>我是一个span</span>
+        <span>我是一个span</span>
+        <span>我是一个span</span>
+
+    </body>
+</html>
