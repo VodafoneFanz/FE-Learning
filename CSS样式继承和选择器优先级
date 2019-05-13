@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>常用选择器</title>
+        <!-- <link rel="stylesheet" type="text/css" href="Style.css" /> -->
+        <style type="text/css">
+            /*
+                样式的继承
+                像儿子继承父亲一样，在CSS中祖先元素的样式会被后代继承
+                利用继承可以将基本样式设置给祖先元素，后代就会自动应用样式
+                并不是所有样式都会被继承，比如和背景相关的属性 可以查手册继承性
+            */
+            span + p{
+                background-color: blueviolet;
+            }
+            .p1{
+                background-color: yellow;
+            }
+            p{
+                background-color: brown;
+            }
+            #p2{
+                background-color: aqua;
+            }
+            /*
+            选择器的优先级
+                当不同的选择器选中了同一个元素并且设置不同样式
+                这些样式产生冲突，最终选取哪个样式有选择器的权重决定
+                优先级高的显示
+                优先级规则：
+                    内联样式 1000
+                    id选择器 100
+                    类和伪类 10
+                    元素选择器 1
+                    通配选择器 0
+                    继承 没有优先级
+                当选择器包含多种选择器需要将优先级相加进行计算
+                但是注意选择器优先级计算不会超过最大数量级
+                若选择器的优先级一样则选用靠后的样式
+                并集选择器的优先级单独计算
+
+                可以在样式最后添加!important将会获得最高优先级，但是在开发中尽量避免使用！
+            */
+        </style>
+    </head>
+    <body>
+        <p class="p1" id="p2">我是一个段落</p>
+        <p>我是一个段落</p>
+        <span>我是一个span</span>
+        <p>我是一个段落</p>
+        <p>我是一个段落</p>
+    </body>
+</html>
