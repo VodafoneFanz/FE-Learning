@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>常用选择器</title>
+        <!-- <link rel="stylesheet" type="text/css" href="Style.css" /> -->
+        <style type="text/css">
+
+            /*
+            伪元素
+                使用伪元素来表示元素中特殊位置
+                为p第一个字符设置样式
+
+                :before表示元素最前面的部分
+                一般要和content一起使用
+                通过content给before或者after的位置添加一些内容
+
+            属性选择器
+                为所有具有title属性的p元素设置背景颜色
+                可以根据元素中的属性来选取
+                语法：
+                    [属性名] 选取具有特殊属性的元素
+                    [属性名="属性值"] 选取特定属性值的元素
+                    [属性名^="属性值"] 选取属性值以指定内容开头的元素
+                    [属性名$="属性值"] 选取属性值以指定内容结尾的元素
+                    [属性名*="属性值"] 选取属性值含有指定内容的元素
+
+                为所有title属性值为hello的元素
+                p[title="hello"]{
+                background-color:teal;
+            }
+                为所有title属性值以hel开头的元素 ^=
+                p[title^="hel"]{
+                background-color:teal;
+            }
+
+            */
+
+            p[title]{
+                background-color:red; 
+            }
+            p[title^="hel"]{
+                background-color:teal;
+            }
+            p::first-letter{
+                color: yellowgreen;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <!--
+            title属性 可以给任何标签
+            当鼠标移到元素上方，titie的属性值将会作为文字显示
+        -->
+        <h1>悯农</h1>
+        <p title="hello">锄禾日当午，汗滴禾下土</p>
+        <p id="p1">锄禾日当午，汗滴禾下土</p>
+        <p title="hel" class="p3 p2">锄禾日当午，汗滴禾下土</p>
+        <p class="p2">锄禾日当午，汗滴禾下土</p>
+    </body>
+</html>
