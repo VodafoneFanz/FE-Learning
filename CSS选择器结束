@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>常用选择器</title>
+        <!-- <link rel="stylesheet" type="text/css" href="Style.css" /> -->
+        <style type="text/css">
+        /*
+            给第一个p元素设置背景颜色
+            :first-child 可以选中第一个子元素
+            :last-child 可选中最后一个子元素
+            :nth-child() 可选中任意位置子元素 
+                参数可以指定选中第几个元素
+                even偶数位 odd奇数位
+            
+            :first-of-type 
+            :last-of-type
+            :nth-of-type()
+                这些比较类似 child是所有子元素排列 type是当前类型元素中排列
+
+            兄弟元素选择器
+            为span后面的第一个p设置背景颜色
+           
+            后一个兄弟元素选择器
+            语法：    
+                前一个 + 后一个
+            选中后面所有兄弟元素
+            语法：
+                前一个 ~ 后面所有
+
+            否定伪类：
+                可以从已经选中的元素中剔除某些元素
+                语法：
+                    :not(选择器)
+        */
+            span + p{
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <p>我是一个段落</p>
+        <p>我是一个段落</p>
+        <span>我是一个span</span>
+        <p>我是一个段落</p>
+        <p>我是一个段落</p>
+    </body>
+</html>
