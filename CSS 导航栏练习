@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Navigator</title>
+        <!-- <link rel="stylesheet" type="text/css" href="Style.css" /> -->
+        <style type="text/css">
+            /*去除默认边框*/
+            *{
+            margin: 0;
+            padding: 0;
+            }
+
+            .nav{
+                /*去除列表头部*/
+                list-style-type: none;
+                /*设置背景*/
+                background-color: rgb(44, 124, 199);
+                width: 60%;
+                /*设置居中*/
+                margin: 40px auto;
+                overflow: hidden;
+            }
+
+            .nav li{
+                float: left;
+                width: 25%;
+            }
+
+            .nav li a{
+                /*将a转换为块元素*/
+                display: block;
+                width: 100%;
+                /*文字样式*/
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                padding: 5px;
+            }
+
+            .nav li a:hover{
+                background-color: #cc0000;
+            }
+
+        </style>
+    </head>
+    <body>
+        <ul class="nav">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">联系</a></li>
+            <li><a href="#">关于</a></li>
+        </ul>
+    </body>
+</html>
