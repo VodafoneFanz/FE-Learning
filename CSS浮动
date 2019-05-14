@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>常用选择器</title>
+        <!-- <link rel="stylesheet" type="text/css" href="Style.css" /> -->
+        <style type="text/css">
+        /*
+            设置边框必须包含三个属性
+            border-width
+            border-color
+            border-style
+            缺一不可
+        */
+
+        /*
+            利用display将一个内联元素转换元素类型
+                inline 元素设置为内联元素
+                block 元素设置为块元素
+                none 元素不会被显示 并且占位消失
+            利用visibility设置元素的隐藏和显现
+                visible 默认值
+                hidden 元素隐藏 但是占位一直在
+        */
+
+        /*
+            通过overflow可以规定父元素如何处理溢出的子元素
+                visible 默认值 不会对溢出做任何处理
+                hidden 一剪没 溢出内容被修剪不会显示
+                scroll 产生滚动条 但都会添加水平垂直滚动条
+                auto 自动添加滚动条
+        */
+
+        /*
+            float可以让元素脱离文档流
+                none 不脱离文档流
+                left 向左侧浮动
+                right 向右侧浮动
+            当为一个元素设置浮动以后，元素立即脱离文档流，下边的元素会向上移动
+            元素会尽量往左上或者右上浮动，直到碰到父元素的边框
+            若浮动元素上方为没有浮动的块元素，将不再向上浮动
+            不会超过上方的兄弟元素
+        */
+            .bos{
+                width: 100px;
+                height: 100px;
+                background-color: aquamarine
+            }
+            .bos2{
+                width: 50%;
+                height: 50%;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bos">
+                <div class="bos2"></div>
+        </div>
+        
+        <p>我是一个段落</p>
+        <p>我是一个段落</p>
+        <span>我是一个span</span>
+        <p>我是一个段落</p>
+        <p>我是一个段落</p>
+    </body>
+</html>
