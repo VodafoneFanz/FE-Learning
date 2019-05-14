@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>网页练习</title>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .box1{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+            }
+            .box2{
+                width: 200px;
+                height: 200px;
+                background-color: aqua;
+                /*
+                    定位：将我们指定的元素摆放到页面任意位置
+                        通过定位可以任意摆放元素
+                        通过position属性设置定位
+                    可选值：
+                        static 元素没有开启定位
+                        relative 开启元素相对定位 
+                            相对于元素在文档流中原来的位置
+                            相对定位不会脱离文档流
+                            相对定位会让元素提升一个层级
+                        absolute 开启绝对定位
+                        fixed 开启元素固定定位（也是绝对定位的一种）
+                    当开启定位后，可以通过left right top bottom来设置元素偏移量
+                */
+                /* position: relative;
+                left: 200px;
+                top: 200px; */
+            }
+            .box3{
+                width: 200px;
+                height: 200px;
+                background-color: yellow;
+                /*
+                    开启绝对定位absolute
+                        会让元素脱离文档流
+                        绝对定位是相对于离他最近的开启了定位的祖先元素进行定位！
+                            若所有祖先元素都没有开启定位则相对浏览器窗口定位
+                        绝对定位会使元素提升一个层级
+                        绝对定位会改变元素性质（内联元素-->块元素）
+                */
+
+                /*
+                    固定定位fixed
+                        固定定位也是一种绝对定位，大部分特点和绝对定位一样
+                        不同点：
+                            固定定位永远相对于浏览器窗口进行定位
+                            固定定位会固定在浏览器窗口的一个位置，不会虽滚动条滚动
+
+                */
+                /*
+                    如果定位元素层级一样，那么根据结构顺序来，结构位于下面的盖住上面的
+                    通过z-index可以设置层级
+                    给z-index一个正整数值，值越大层级越高
+                    没有开启定位的元素不能使用z-index
+                    父元素不会盖住子元素
+                */
+                position: fixed;
+            }
+        </style>
+    </head>
+    <body>
+        <!--div.box$*3-->
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </body>
+</html>
