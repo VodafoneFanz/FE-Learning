@@ -1,0 +1,288 @@
+.index{
+    /* height: 4000px; */
+    /*设置body背景*/
+    background-image: url(../img/bannerBackground.png);
+    background-repeat: repeat-x;
+}
+/*注意高度塌陷*/
+.clearFix::before,
+.clearFix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.clearFix{
+    zoom: 1;
+}
+
+/*固定元素的宽度和居中*/
+.w{
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*头部header属性*/
+.header{
+    /*设置上下内边距*/
+    padding-top: 37px;
+    padding-bottom: 46px;
+}
+
+.logo{
+    /*设置logo左边距*/
+    margin-left: 15px;
+}
+
+/*导航栏nav属性*/
+.nav{
+    float: right;
+    margin-top: 22px;
+}
+.nav li{
+    float: left;
+    /*边距*/
+    padding: 0 10px 8px 10px;
+    /*左边框*/
+    border-left: 1px #d6d6d6 dotted;
+}
+.nav a{
+    /*设置字体样式*/
+    font: bold 14px Georgia;
+    counter-reset: #666666;
+    text-decoration: none;
+}
+/*链接的样式*/
+.nav a:visited{
+    color: #666666;
+}
+.nav a:hover{
+    color: #aaaaaa;
+    text-decoration: underline;
+}
+.nav p{
+    font: 11px Tahoma;
+    color: #b7b7b7;
+}
+
+/* banner属性*/
+/*
+.banner .shadow{
+    margin-top: -10px;
+} */
+.banner{
+    height: 349px;
+    background: url(../img/bannerShadow.png) no-repeat bottom center;
+    /* background-color: yellow; */
+}
+
+/*pointerList属性*/
+.pointerList{
+    position: relative;
+    top: -36px;
+    left: 15px;
+}
+.pointerList a{
+    /*a变为块元素 注意设置a的大小*/
+    float: left;
+    width: 17px;
+    height: 17px;
+    background: url(../img/pointer.png) center;
+    margin: 0 4px;
+}
+.pointerList .active,
+.pointerList a:hover{
+    background: url(../img/pointerActive.png) center;
+}
+
+/*content属性*/
+.content h1{
+    /* background-color: aqua; */
+    text-align: center;
+    font: bold 24px Georgia;
+    color: black;
+    padding-top: 6px;
+    padding-bottom: 20px;
+    /*分割线*/
+    background: url(../img/breakLine.png) no-repeat bottom center;
+    /*外边距*/
+    margin-bottom: 35px;
+}
+.content .perfectLogic,
+.completeSolution,
+.uberCulture{
+    width: 300px;
+    height: 478px;
+    float: left;
+}
+.content .completeSolution{
+    margin: 0 20px;
+}
+.content h2{
+    font: 21px Georgia;
+    color: #11719e;
+}
+.content h3{
+    font: 12px Helvetica;
+    color: #8c8c8c;
+    margin-bottom: 13px;
+}
+.content .pics{
+    width: 300px;
+    height: 202px;
+    margin-bottom: 12px;
+    background: url(../img/imgBorder.png) no-repeat;
+    /*图片水平居中*/
+    text-align: center;
+    /*上内边距实现垂直居中*/
+    padding-top: 12px;
+}
+.content p{
+    height: 89px;
+    font: 13px Helvetica;
+    color: #3e3e3e;
+    margin: 0 5px 13px 5px;
+}
+.content a{
+    display: block;
+    height: 40px;
+    width: 163px;
+    margin-bottom: 35px;
+}
+.content{
+    background: url(../img/breakLine.png) no-repeat bottom center;
+    /* background-color: #11719e; */
+}
+
+/*contact属性*/
+.contact .socialConnection,
+.contactBar,
+.newsUpdate{
+    height: 377px;
+    width: 300px;
+    float: left;
+    padding-top: 39px;
+    /* background-color: aqua; */
+}
+.contact .contactBar{
+    margin: 0 10px;
+}
+.contact h2{
+    font: 18px Georgia;
+    color: #444444;
+    padding-bottom: 11px;
+    background: url(../img/_----.png) no-repeat bottom center;
+    margin-bottom: 15px;
+}
+/*socialConnection属性*/
+.socialConnection p,
+.newsUpdate p{
+    font: 12px Helvetica;
+    color: #444444;
+    margin-bottom: 10px;
+}
+.socialConnection li{
+    float: left;
+    margin-bottom: 38px;
+}
+.socialConnection h3{
+    font: bold 18px Myriad Pro;
+    color: #444444;
+    padding-bottom: 11px;
+    background: url(../img/_----.png) no-repeat bottom center;
+    margin-bottom: 13px;
+}
+.socialConnection input,
+.contactBar .normal{
+    width: 296px;
+    height: 33px;
+    border-style: solid;
+    border-color: #cfcfcf;
+    border-width: 1px;
+    border-radius: 3px;
+    padding: 0 15px;
+    margin-bottom: 12px;
+}
+/*定义输入框提示字*/
+.socialConnection ::-webkit-input-placeholder,
+.contactBar ::-webkit-input-placeholder{
+    color: #d4d4d4;
+    font: Verdana 10px;
+}
+
+.buttom{
+    display: block;
+    height: 32px;
+    width: 163px;
+    background: url(../img/button.png) no-repeat;
+    font: 13px/32px Georgia;
+    text-decoration: none;
+    text-indent: 1em;
+    color: white;
+}
+
+/*contactBar属性*/
+.contactBar .message{
+    width: 296px;
+    height: 166px;
+    border-style: solid;
+    border-color: #cfcfcf;
+    border-width: 1px;
+    border-radius: 3px;
+    /* padding:0 15px; */
+    margin-bottom: 12px;
+}
+
+/*newsUpdate属性*/
+.newsUpdate li{
+    padding-bottom: 14px;
+    background: url(../img/_----.png) no-repeat bottom center;
+    margin-bottom: 10px;
+}
+.newsUpdate .icon{
+    display: block;
+    height: 58px;
+    width: 58px;
+    background: url(../img/iconContainer.png) no-repeat;
+    background-position: center center;
+    text-align: center;
+    padding-top: 7px;
+}
+.newsUpdate p{
+    height: 58px;
+    width: 233px;
+    position: relative;
+    float: right;
+    padding-top: 10px;
+}
+
+/*footer属性*/
+.footer{
+    height: 173px;
+    background-color: #333333;
+    border-top: 10px #4c4c4c solid;
+}
+.footer p{
+    font: 11px/20px Helvetica;
+    color: #999999;
+}
+.footer .w{
+    padding-top: 18px;
+}
+.footer .copyright{
+    float: right;
+    margin-right: 23px;
+}
+.footer a:not(.lastOne){
+    padding: 0 5px 0 0;
+    border-right: solid 1px #999999;
+    text-decoration: none;
+    color: #999999;
+}
+.footer .lastOne{
+    text-decoration: none;
+    color: #999999;
+}
+.footer a:hover{
+    color: white;
+    text-decoration: underline;
+}
