@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>JS 数据类型、字面量和变量</title>
+        <script>
+        
+        </script>
+    </head>
+
+    <body>
+        <pre>
+            <b>
+                <script>
+                    //<!--在旧版本中隐藏脚本
+                    document.write("\t\tHello\n"+"World\n");
+                    document.writeln("Fine day\n");
+                    document.writeln('Smiley face:<font size="+3"> \u263a\n');
+                    //结束隐藏-->
+                    document.write(typeof(55), "<br/>");
+                    document.write(typeof("Yes"), "<br/>");
+                    document.write(typeof(true),"<br/>");
+                    //逻辑与中含有数字 若为真 返回最后一个表达式；含有0 返回0
+                    document.write("hello"&&0&&"shit");
+                    var age = prompt("How old are you?");
+                    if(age > 12 && age < 25){
+                        document.write("<i>Young man</i>");
+                    }else{
+                        document.write("<i>Old man</i>");
+                    }
+                    //逻辑或||从左向右判断，只要遇到true的就输出 null全部跳过
+                    document.write(null||"hello"||50||false);
+                    //prompt(message, defaultText) 
+                    /*
+                        var name = prompt("What's your name?","");
+                    document.write("welcome"+name);
+                    if (confirm("Are you gay?") == true){
+                        document.write("<br/>"+"Fantasy");
+                    }else{
+                        document.write("<br/>"+"pity");
+                    }*/
+                    //parseInt(字符串,基数)
+                    parseInt("17Days");
+                    //eval()将字符串作为表达式计算
+                    eval("(5+4)/3");
+                    /*
+                        特殊运算符
+                        , 计算两个表达式 返回第二个表达式的结果
+                        delete 删除对象、对象的属性、制定索引位置的数组元素
+                        function 定义一个匿名函数
+                        in 若属性是一个指定对象的属性就返回true
+                        instanceof 若对象是指定对象则返回true
+                        new 创建一个用户定义的对象类型或一个内置对象类型的实例
+                        this 引用当前对象的关键字
+                        void 制定计算的表达式无返回结果
+                    */
+                </script>
+            </b>
+        </pre>
+
+    </body>
+</html>
