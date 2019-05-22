@@ -54,3 +54,53 @@
         </script>
     </body>
 </html>
+<html>
+
+<head>
+    <title>JS 语句</title>
+</head>
+
+<body>
+    <script>
+        // while (true) {
+        //     var grade = eval(prompt("What's your grade?", ""));
+        //     if (grade < 0 || grade > 100) {
+        //         alert("Illegal choice!");
+        //         continue;
+        //     }
+        //     if (grade > 89 && grade < 101) {
+        //         alert("A");
+        //     } else if (grade > 79 && grade < 90) {
+        //         alert("B");
+        //     } else {
+        //         alert("Shit!");
+        //     }
+        //     var answer = prompt("Another?","");
+        //     if(answer != "yes"){
+        //         break;
+        //     }
+        // }
+
+        // var str = "@";
+        // for(var row = 0; row < 6; row++){
+        //     for(var col = 0;col < row; col++){
+        //         document.write(str);
+        //     }
+        //     document.write("<br/>");
+        // }
+
+        /*给循环增加标签*/
+        outerLoop: for(var row = 0; row < 10; row++){
+            for(var col = 0; col <= row; col++){
+                document.write("row"+row+"|column"+col,"<br/>");
+                if(col == 3){
+                    document.write("Breaking out of outer loop at column"+col+"<br/>");
+                    break outerLoop;
+                }
+            }
+            document.write("***************<br/>");
+        }
+    </script>
+</body>
+
+</html>
