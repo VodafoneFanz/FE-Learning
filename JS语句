@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>JS 语句</title>
+        <script>
+        
+        </script>
+    </head>
+
+    <body>
+        <script>
+            /*
+            if语句
+                语法：
+                    if(condition1){statemrnt1} 
+                    else if(condition2){statement2}
+                    else{statement3};
+            do-while语句：
+                语法：
+                    do{
+                        statement
+                    }while(expression)
+                在执行表达式之前，循环体代码至少执行一次,后测试语句
+            while语句
+                    语法：
+                        while(expression){statement};
+                    前测试语句
+            for语句
+                语法：
+                    for(initialization; expression; post-loop-expression){statement};
+                前测试循环语句，在执行循环前要初始化变量和定义循环后要执行的代码
+            */
+            // var i = prompt("Write a Numeber");
+            // if(i >20){
+            //     alert("greater than 20");
+            // }else{
+            //     alert("less or equal to 20");
+            // }
+
+            // var p = 1;
+            // do{
+            //     p += 2;
+            // }while(p < 10);
+            // alert(p);
+
+            // var i = 0;
+            // while(i<10){
+            //     i += 2;
+            // }
+            // alert(i);
+
+            // for(var i = 0; i < 10; i++){
+            //     alert(i);
+            // }
+        </script>
+    </body>
+</html>
