@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Object</title>
+        <script>
+            //对象相当于一个复合的数据类型，在对象中可以保存多个不同数据类型的属性
+            //创建对象
+            //对象.属性名 = 属性值
+            //对象["属性名"] = 属性值 ---- 特殊属性名
+            //delete 对象.属性名 --- 删除属性
+            /*
+                检查对象中是否有某个属性
+                利用 in 运算符
+                    语法：
+                    "属性名" in 对象
+                    有的话返回true；反之返回false；
+            */
+           /*
+            基本数据类型和引用数据类型
+                基本数据类型
+                String Number Boolean Null Undefined
+                引用数据类型
+                Object
+            JS中的变量都储存在栈内存之中
+                基本数据类型的值直接在栈内存中存储，值与值之间独立存在
+                对象是保存存在堆内存
+                    每创建一个新对象，就会在堆内存中开辟新的空间，而变量保存的是内存地址
+            内存：栈内存 堆内存
+           */
+            var obj = new Object()
+            var obj2 = {name:"shit",gender:"female"};//对象字面量
+            obj.name = "Son";
+            obj.gender = "male";
+            obj.age = 18;
+        </script>
+    </head>
+    <body>
+        <script>
+            console.log(obj2);
+        </script>
+    </body>
+</html>
